@@ -1,4 +1,4 @@
-# Coffee Clicker DOM Homework
+# :coffee: Coffee Clicker DOM Homework
 
 ## Week 2 Assignment
 
