@@ -10,7 +10,7 @@
 
 ## Part 1
 
-Follow the directions in the code comments in the ```script.js``` file. You will need to You will need to:
+Follow the directions in the code comments in the ```script.js``` file. You will need to:
 
 - Make references to DOM nodes
 
