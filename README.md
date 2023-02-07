@@ -2,10 +2,6 @@
 
 <hr/>
 
-## Week 2 Assignment
-
-
-
 ### What needs to get done? 
 
 ## Part 1
