@@ -22,8 +22,9 @@ function clickCoffee(data) {
   // Increment the data object's (passed into this function) coffee property by one
   // call the updateCoffeeView function and pass it the newly updated data.coffee property
   // call the renderProducers function and pass it the data object
-  data += 1;
+  data.coffee++;
   updateCoffeeView(data.coffee);
+
   renderProducers(data);
 }
 
@@ -33,18 +34,18 @@ function clickCoffee(data) {
 
 function unlockProducers(producers, coffeeCount) {
   // loop through the producers array passed into the function
+  for (const producer of producers) {
+    if (coffeeCount >= producer.price / 2) producer.unlocked = true;
+  }
   // for each producer, if the coffeeCount (passed in) is greater than or equal
   // to half the producer's price, reassign the producers.unlocked property to equal true
-  for (let key in producers) {
-    if (coffeeCount[key] >= producers[key / 2]) return true;
-  }
 }
 
 function getUnlockedProducers(data) {
   // use the Array.prototype.filter() method
   // filter through the data.producers property, and return an array with only the producers whose
   // unlocked property is true
-  data.producers.filter(unlockProducers);
+  const filteredArray = data.producers.filter(unlockProducers);
 }
 
 // You do not need to edit this function
