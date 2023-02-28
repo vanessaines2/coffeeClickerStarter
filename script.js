@@ -45,7 +45,7 @@ function getUnlockedProducers(data) {
   // use the Array.prototype.filter() method
   // filter through the data.producers property, and return an array with only the producers whose
   // unlocked property is true
-  const filteredArray = data.producers.filter(unlockProducers);
+  const filteredArray = data.producers.filter();
 }
 
 // You do not need to edit this function
